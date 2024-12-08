@@ -9,7 +9,7 @@ function ShopCards() {
         <div className="max-w-7xl mx-auto px-4 py-12">
           <div className="text-center mb-12">
             <h2 className="text-[#252B42] text-[24px] leading-[32px] font-bold mb-2">
-              EDITOR'S PICK
+              EDITORS PICK
             </h2>
             <p className="text-gray-400 font-normal text-sm">
             Problems trying to resolve the conflict between 
