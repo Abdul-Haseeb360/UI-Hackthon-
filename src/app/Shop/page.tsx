@@ -8,7 +8,7 @@ import Clients from "../../../public/Images/desktop-clients-1.png"
 import Image from 'next/image'
 import Footer from '../Components/Footer'
 import ProductCard from '../Components/Product-Card-10'
-// import { Arrow} from 'lucide-react'
+
 function page() {
 
 
