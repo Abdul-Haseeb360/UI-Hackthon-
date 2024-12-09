@@ -33,7 +33,7 @@ function Footer({ bgColor = "bg-[#FAFAFA]"}: FooterProps) {
       </div>
 
       <div className="container px-4 my-[50px]">
-        <div className="grid grid-cols-1 gap-8 mx-[115px] md:grid-cols-2 lg:grid-cols-5">
+        <div className="grid grid-cols-1 gap-2 mx-[115px] md:grid-cols-2 lg:grid-cols-5">
           {/* Company Info */}
           <div>
             <h3 className="mb-6 text-base font-bold text-[#252B42]">Company Info</h3>
@@ -81,19 +81,19 @@ function Footer({ bgColor = "bg-[#FAFAFA]"}: FooterProps) {
           {/* Get In Touch */}
           <div>
             <h3 className="mb-6 text-base font-bold text-[#252B42]">Get In Touch</h3>
-            <form className="space-y-4 font-bold text-base flex">
-              <input
-                type="email"
-                placeholder="Your Email"
-                className=" px-3 py-2 text-sm border rounded-md border-input bg-background"
-              />
-              <button
-                type="submit"
-                className=" px-3 py-2 text-sm font-medium text-white bg-blue-500 rounded-md hover:bg-blue-600"
-              >
-                Subscribe
-              </button>
-            </form>
+            <form className="flex max-w-md">
+      <input
+        type="email"
+        placeholder="Your Email"
+        className="flex-1 rounded-l-lg border border-r-0 border-gray-300 px-4 py-3 text-gray-600 placeholder:text-gray-500 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+      />
+      <button
+        type="submit"
+        className="rounded-r-lg bg-[#29ABE2] px-2 py-3 font-medium text-white hover:bg-[#29ABE2]/90 focus:outline-none focus:ring-2 focus:ring-[#29ABE2] focus:ring-offset-2"
+      >
+        Subscribe
+      </button>
+    </form>
               <p className="text-sm text-muted-foreground mt-2">Lore imp sum dolor Amit</p>
           </div>
         </div>

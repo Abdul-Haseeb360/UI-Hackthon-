@@ -9,8 +9,129 @@ import Image from 'next/image'
 import Footer from '../Components/Footer'
 import ProductCard from '../Components/Product-Card-10'
 
-function page() {
+interface Product {
+  id: number;
+  name: string;
+  department: string;
+  originalPrice: number;
+  salePrice: number;
+  image: string;
+  colors: string[];
+}
 
+
+
+function page() {
+  const products: Product[] = [
+    {
+      id: 1,
+      name: "Graphic Design",
+      department: "English Department",
+      originalPrice: 16.48,
+      salePrice: 6.48,
+      image: "/Images/Product1.png",
+      colors: ["#23A6F0", "#23856D", "#E77C40", "#252B42"],
+    },
+    {
+      id: 2,
+      name: "Graphic Design",
+      department: "English Department",
+      originalPrice: 16.48,
+      salePrice: 6.48,
+      image: "/Images/Product2.png",
+      colors: ["#23A6F0", "#23856D", "#E77C40", "#252B42"],
+    },
+    {
+      id: 3,
+      name: "Graphic Design",
+      department: "English Department",
+      originalPrice: 16.48,
+      salePrice: 6.48,
+      image: "/Images/Product4.png",
+      colors: ["#23A6F0", "#23856D", "#E77C40", "#252B42"],
+    },
+    {
+      id: 4,
+      name: "Graphic Design",
+      department: "English Department",
+      originalPrice: 16.48,
+      salePrice: 6.48,
+      image: "/Images/Product3.png",
+      colors: ["#23A6F0", "#23856D", "#E77C40", "#252B42"],
+    },
+    {
+      id: 1,
+      name: "Graphic Design",
+      department: "English Department",
+      originalPrice: 16.48,
+      salePrice: 6.48,
+      image: "/Images/Product5.png",
+      colors: ["#23A6F0", "#23856D", "#E77C40", "#252B42"],
+    },
+    {
+      id: 2,
+      name: "Graphic Design",
+      department: "English Department",
+      originalPrice: 16.48,
+      salePrice: 6.48,
+      image: "/Images/Product6.png",
+      colors: ["#23A6F0", "#23856D", "#E77C40", "#252B42"],
+    },
+    {
+      id: 3,
+      name: "Graphic Design",
+      department: "English Department",
+      originalPrice: 16.48,
+      salePrice: 6.48,
+      image: "/Images/Product7.png",
+      colors: ["#23A6F0", "#23856D", "#E77C40", "#252B42"],
+    },
+    {
+      id: 4,
+      name: "Graphic Design",
+      department: "English Department",
+      originalPrice: 16.48,
+      salePrice: 6.48,
+      image: "/Images/Product8.png",
+      colors: ["#23A6F0", "#23856D", "#E77C40", "#252B42"],
+    },
+    {
+      id: 4,
+      name: "Graphic Design",
+      department: "English Department",
+      originalPrice: 16.48,
+      salePrice: 6.48,
+      image: "/Images/Product9.png",
+      colors: ["#23A6F0", "#23856D", "#E77C40", "#252B42"],
+    },
+    {
+      id: 4,
+      name: "Graphic Design",
+      department: "English Department",
+      originalPrice: 16.48,
+      salePrice: 6.48,
+      image: "/Images/Product10.png",
+      colors: ["#23A6F0", "#23856D", "#E77C40", "#252B42"],
+    },
+    {
+      id: 4,
+      name: "Graphic Design",
+      department: "English Department",
+      originalPrice: 16.48,
+      salePrice: 6.48,
+      image: "/Images/Product11.png",
+      colors: ["#23A6F0", "#23856D", "#E77C40", "#252B42"],
+    },
+    {
+      id: 4,
+      name: "Graphic Design",
+      department: "English Department",
+      originalPrice: 16.48,
+      salePrice: 6.48,
+      image: "/Images/Product12.png",
+      colors: ["#23A6F0", "#23856D", "#E77C40", "#252B42"],
+    },
+  ];
 
   return (
     <div>
@@ -43,7 +164,9 @@ function page() {
     <Image src={Clients} alt=""/>
     </div>
 
-    <ProductCard hideText={false}/>
+    <ProductCard hideText={true} products={products}/>
+  
+  
     <Footer bgColor="bg-[#FFFFFF]"/>
     </div>
   )
