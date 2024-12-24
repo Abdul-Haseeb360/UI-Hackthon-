@@ -26,7 +26,7 @@ function Navbar() {
                   <ChevronDown className="h-4 w-4" />
                 </button>
               </div>
-              <Link href="/about" className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500">
+              <Link href="/About" className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500">
                 About
               </Link>
               <Link href="/blog" className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500">
@@ -82,16 +82,20 @@ function Navbar() {
                 <SheetContent side="right" className="w-[300px] sm:w-[540px]">
                   <SheetTitle className="text-left text-lg font-semibold text-[#252B42] mb-4">Menu</SheetTitle>
                   <nav className="flex flex-col gap-4 mt-8">
-                    <Link href="/" className="text-[30px] leading-[45px] font-medium text-[#252B42] hover:text-blue-500">
+                    <Link href="/" className="text-xl font-semibold text-[#252B42] hover:text-blue-500">
                       Home
                     </Link>
-                    <Link href="/product" className="text-[30px] leading-[45px] font-medium text-[#252B42] hover:text-blue-500">
-                      Product
+                    <Link href="/Shop" className="text-xl font-semibold flex justify-between text-[#252B42] hover:text-blue-500">
+                      Shop
+                      <ChevronDown className="h-4 w-4 mt-3" />
                     </Link>
-                    <Link href="/pricing" className="text-[30px] leading-[45px] font-medium text-[#252B42] hover:text-blue-500">
-                      Pricing
+                    <Link href="/About" className="text-xl font-semibold text-[#252B42] hover:text-blue-500">
+                      About
                     </Link>
-                    <Link href="/contact" className="text-[30px] leading-[45px] font-medium text-[#252B42] hover:text-blue-500">
+                    <Link href="/Blog" className="text-xl font-semibold text-[#252B42] hover:text-blue-500">
+                      Blog
+                    </Link>
+                    <Link href="/contact" className="text-xl font-semibold text-[#252B42] hover:text-blue-500">
                       Contact
                     </Link>
                   </nav>

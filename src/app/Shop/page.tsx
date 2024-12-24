@@ -1,11 +1,11 @@
 import React from 'react'
-import Head from "../Components/Dark-navbar"
+import Head from "../Components/Head"
 import Navbar from '../Components/Light-navbar'
 import Link from 'next/link'
+import Image from 'next/image'
 import ClothCards from '../Components/ClothCards'
 import FilterBar from '../Components/FilterBar'
 import Clients from "../../../public/Images/desktop-clients-1.png"
-import Image from 'next/image'
 import Footer from '../Components/Footer'
 import ProductCard from '../Components/Product-Card-10'
 
@@ -96,7 +96,7 @@ function page() {
       colors: ["#23A6F0", "#23856D", "#E77C40", "#252B42"],
     },
     {
-      id: 4,
+      id: 5,
       name: "Graphic Design",
       department: "English Department",
       originalPrice: 16.48,
@@ -105,7 +105,7 @@ function page() {
       colors: ["#23A6F0", "#23856D", "#E77C40", "#252B42"],
     },
     {
-      id: 4,
+      id: 6,
       name: "Graphic Design",
       department: "English Department",
       originalPrice: 16.48,
@@ -114,7 +114,7 @@ function page() {
       colors: ["#23A6F0", "#23856D", "#E77C40", "#252B42"],
     },
     {
-      id: 4,
+      id: 7,
       name: "Graphic Design",
       department: "English Department",
       originalPrice: 16.48,
@@ -123,7 +123,7 @@ function page() {
       colors: ["#23A6F0", "#23856D", "#E77C40", "#252B42"],
     },
     {
-      id: 4,
+      id: 8,
       name: "Graphic Design",
       department: "English Department",
       originalPrice: 16.48,
@@ -131,6 +131,7 @@ function page() {
       image: "/Images/Product12.png",
       colors: ["#23A6F0", "#23856D", "#E77C40", "#252B42"],
     },
+    
   ];
 
   return (
@@ -165,7 +166,7 @@ function page() {
     </div>
 
     <ProductCard hideText={true} products={products}/>
-  
+    
   
     <Footer bgColor="bg-[#FFFFFF]"/>
     </div>

@@ -9,31 +9,34 @@ interface FooterProps {
 function Footer({ bgColor = "bg-[#FAFAFA]"}: FooterProps) {
   return (
     <div  >
-      <div className={` w-full ${bgColor} h-[142px] text-white `}>
-        <div className="flex justify-between items-center px-[130px] py-10 ">
-          <Link href="/" className="text-2xl font-bold text-[#252B42] mr-[577px]">
+     
+     <div className={`w-full py-8 ${bgColor} text-white `}>
+      <div className="container  px-4 sm:px-6 lg:px-[195px]">
+        <div className="flex flex-col sm:flex-row justify-between gap-6">
+          <Link href="/" className="text-[24px] leading-[32px] sm:text-2xl font-bold text-[#252B42]">
             Bandage
           </Link>
           
-          <div className="flex items-center gap-5">
-            <Link href="https://facebook.com" className= " text-blue-400 hover:text-blue-400 transition-colors">
-              <Facebook className="w-5 h-5" />
+          <div className="flex items-center gap-6">
+            <Link href="https://facebook.com" className="text-blue-400 hover:text-blue-500 transition-colors">
+              <Facebook className="w-5 h-5 sm:w-6 sm:h-6" />
               <span className="sr-only">Facebook</span>
             </Link>
-            <Link href="https://instagram.com" className=" text-blue-400  hover:text-pink-400 transition-colors">
-              <Instagram className="w-5 h-5" />
+            <Link href="https://instagram.com" className="text-blue-400 hover:text-pink-400 transition-colors">
+              <Instagram className="w-5 h-5 sm:w-6 sm:h-6" />
               <span className="sr-only">Instagram</span>
             </Link>
-            <Link href="https://twitter.com" className=" text-blue-400  hover:text-blue-400 transition-colors">
-              <Twitter className="w-5 h-5" />
+            <Link href="https://twitter.com" className="text-blue-400 hover:text-blue-500 transition-colors">
+              <Twitter className="w-5 h-5 sm:w-6 sm:h-6" />
               <span className="sr-only">Twitter</span>
             </Link>
           </div>
         </div>
       </div>
+    </div>
 
-      <div className="container px-4 my-[50px]">
-        <div className="grid grid-cols-1 gap-2 mx-[115px] md:grid-cols-2 lg:grid-cols-5">
+      <div className="container px-2 my-[50px] ">
+        <div className="grid grid-cols-1  lg:mx-[195px] mx-4  md:grid-cols-2 lg:grid-cols-6 ">
           {/* Company Info */}
           <div>
             <h3 className="mb-6 text-base font-bold text-[#252B42]">Company Info</h3>
@@ -79,13 +82,13 @@ function Footer({ bgColor = "bg-[#FAFAFA]"}: FooterProps) {
           </div>
 
           {/* Get In Touch */}
-          <div>
+          <div className='mx-0'>
             <h3 className="mb-6 text-base font-bold text-[#252B42]">Get In Touch</h3>
-            <form className="flex max-w-md">
+            <form className="flex pr-12 ">
       <input
         type="email"
         placeholder="Your Email"
-        className="flex-1 rounded-l-lg border border-r-0 border-gray-300 px-4 py-3 text-gray-600 placeholder:text-gray-500 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+        className="flex-1 rounded-l-lg border border-r-0 border-gray-300 pl-4 pr-0 py-3 text-gray-600 placeholder:text-gray-500 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
       />
       <button
         type="submit"
@@ -100,7 +103,7 @@ function Footer({ bgColor = "bg-[#FAFAFA]"}: FooterProps) {
       </div>
 
       <div className='h-[74px] bg-[#FAFAFA] '>
-      <h6 className='font-bold text-[14] leading-[24px] text-[#737373] py-6 px-[127px]'>Made With Love By Finland All Right Reserved </h6>
+      <h6 className='font-bold text-[14] leading-[24px] text-[#737373] py-6 px-[127px] text-center'>Made With Love By Finland All Right Reserved </h6>
       </div>
     </div>
   )

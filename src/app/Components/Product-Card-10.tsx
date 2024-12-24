@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-
+import Pagination from "./Pagination";
 interface Product {
   id: number;
   name: string;
@@ -74,6 +74,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ products, hideText = false })
           ))}
         </div>
       </div>
+          <Pagination/>
     </div>
   );
 };
