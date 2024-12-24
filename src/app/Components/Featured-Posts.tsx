@@ -1,6 +1,7 @@
 import React from 'react'
 import { Card, CardContent } from "@/components/ui/card"
 import { AlarmClock, AreaChart, AreaChartIcon } from 'lucide-react'
+import Image from 'next/image'
 function FeaturedPosts() {
 
   const posts = [
@@ -45,7 +46,7 @@ function FeaturedPosts() {
         {posts.map((post, index) => (
           <Card key={index} className="overflow-hidden">
             <div className="relative">
-              <img
+              <Image
                 src={post.image}
                 alt={post.title}
                 className="w-full h-48 sm:h-56 lg:h-64 object-fill"

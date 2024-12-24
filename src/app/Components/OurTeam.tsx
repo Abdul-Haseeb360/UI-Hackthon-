@@ -1,5 +1,6 @@
 import React from "react";
 import { Facebook, Instagram, Twitter } from "lucide-react";
+import Image from "next/image";
 
 const teamMembers = [
   {
@@ -37,7 +38,7 @@ function TeamSection() {
         {teamMembers.map((member) => (
           <div key={member.id} className="text-center">
             {/* Image */}
-            <img
+            <Image
               src={member.image}
               alt={member.name}
               className="w-full h-72 object-cover mb-4"
