@@ -75,10 +75,11 @@ export default function ContactSection() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
           <h2 className="text-sm font-bold text-[#252B42] mb-2">
-            WE Can't WAIT TO MEET YOU
+         WE Can&#39;t WAIT TO MEET YOU
+
           </h2>
           <h3 className="text-4xl md:text-5xl font-bold text-[#252B42] mb-8">
-            Let's Talk
+            Let&#39;s Talk
           </h3>
           <button className="px-10 py-4 bg-[#23A6F0] text-white rounded-md font-bold text-sm hover:bg-blue-600 transition-colors">
             Try it free now

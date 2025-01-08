@@ -12,7 +12,7 @@ function WorkWithUs() {
             WORK WITH US
           </h2>
           <h1 className="text-4xl md:text-5xl lg:text-[40px] lg:leading-[50px] font-bold mb-6">
-            Now Let's grow Yours
+            Now Let&#39;s grow Yours
           </h1>
           <p className="text-sm font-normal mb-8 text-white/90">
             The gradual accumulation of information about atomic and small-scale behavior during the first quarter of the 20th
