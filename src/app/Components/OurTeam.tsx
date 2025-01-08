@@ -1,27 +1,8 @@
 import React from "react";
 import { Facebook, Instagram, Twitter } from "lucide-react";
 import Image from "next/image";
+import { teamMembers } from "@/constant/data";
 
-const teamMembers = [
-  {
-    id: 1,
-    image: "/Images/Memeber1.png", // Replace with actual image path
-    name: "Username",
-    profession: "Profession",
-  },
-  {
-    id: 2,
-    image: "/Images/Memeber2.png", // Replace with actual image path
-    name: "Username",
-    profession: "Profession",
-  },
-  {
-    id: 3,
-    image: "/Images/Memeber3.jpg", // Replace with actual image path
-    name: "Username",
-    profession: "Profession",
-  },
-];
 
 function TeamSection() {
   return (

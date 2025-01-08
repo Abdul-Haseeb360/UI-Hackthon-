@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
 
-import Produc1 from "../../../public/Images/Product1.png";
-import Produc2 from "../../../public/Images/Product2.png";
-import ACCESSORIES from "../../../public/Images/ACCESSORIES.png";
-import Produc4 from "../../../public/Images/Product4.png";
+import Produc1 from "../../../public/images/Product1.png";
+import Produc2 from "../../../public/images/Product2.png";
+import ACCESSORIES from "../../../public/images/ACCESSORIES.png";
+import Produc4 from "../../../public/images/Product4.png";
 
 function ShopCards() {
   return (

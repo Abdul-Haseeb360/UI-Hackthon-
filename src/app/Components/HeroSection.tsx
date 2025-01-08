@@ -1,8 +1,7 @@
 import React from "react";
-import herosetion from "../../../public/Images/Herosection.jpg";
+import herosetion from "../../../public/images/Herosection.jpg";
 import Image from "next/image";
 import Link from "next/link";
-import  {Container}  from "./Container";
 
 function HeroSection() {
   return (

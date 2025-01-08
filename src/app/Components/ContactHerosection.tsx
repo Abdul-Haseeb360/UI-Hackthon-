@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Contacthero from "@../../../public/Images/none.png";
+import Contacthero from "@../../../public/images/none.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "../Components/Head";
-import Navbar from "../Components/Light-navbar";
+import Navbar from "../Components/General-Navbar";
 import Link from "next/link";
 import ClothCards from "../Components/ClothCards";
 import FilterBar from "../Components/FilterBar";

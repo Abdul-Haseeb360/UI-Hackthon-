@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Arrow from "../../../public/Images/Arrow.png"
+import Arrow from "../../../public/images/Arrow.png"
 import { contactCards } from "@/constant/data"
 export default function ContactSection() {
   return (

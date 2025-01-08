@@ -1,12 +1,9 @@
 import Image from "next/image";
 import React from "react";
 import Pagination from "./Pagination";
-import { Product } from "@/types/index";
+import { Product, ProductCardProps } from "@/types/index";
 
-interface ProductCardProps {
-  products: Product[]; 
-  hideText?: boolean;
-}
+
 
 const ProductCard: React.FC<ProductCardProps> = ({ products, hideText = false }) => {
   return (

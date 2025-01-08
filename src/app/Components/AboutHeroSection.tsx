@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Abouthero from "@../../../public/Images/AboutHerobg.png";
+import Abouthero from "@../../../public/images/AboutHerobg.png";
 import { Button } from "@/components/ui/button";
 
 function AboutHeroSection() {

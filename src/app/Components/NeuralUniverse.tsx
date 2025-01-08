@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import Univers from "../../../public/Images/col-md-6.png";
+import Univers from "../../../public/images/col-md-6.png";
 
 function NeuralUniverse() {
   return (

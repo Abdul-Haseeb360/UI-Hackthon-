@@ -1,5 +1,5 @@
 import Head from "@/app/Components/Head";
-import Navbar from "./Components/Light-navbar";
+import Navbar from "./Components/General-Navbar";
 import HeroSection from "./Components/HeroSection";
 import ShopCards from "./Components/Fashion-Categories";
 import ProductCard from "./Components/Product-Card-10";

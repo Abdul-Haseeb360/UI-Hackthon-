@@ -2,34 +2,10 @@ import React from 'react'
 import { Card, CardContent } from "@/components/ui/card"
 import { AlarmClock, AreaChart } from 'lucide-react'
 import Image from 'next/image'
+import {posts} from "@/constant/data"
 function FeaturedPosts() {
 
-  const posts = [
-    {
-      image: "/Images/Road.png",
-      tags: ["Google", "Trending", "New"],
-      title: "Loudest à la Madison #1 (L'integral)",
-      description: "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
-      date: "22 April 2021",
-      comments: 10,
-    },
-    {
-      image: "/Images/Car.png",
-      tags: ["Google", "Trending", "New"],
-      title: "Loudest à la Madison #1 (L'integral)",
-      description: "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
-      date: "22 April 2021",
-      comments: 10,
-    },
-    {
-      image: "/Images/Umbrailla.png",
-      tags: ["Google", "Trending", "New"],
-      title: "Loudest à la Madison #1 (L'integral)",
-      description: "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
-      date: "22 April 2021",
-      comments: 10,
-    },
-  ]
+  
   return (
     <div>
 

@@ -19,3 +19,7 @@ export interface OurClientProps {
   description?: string;
   companies?: Company[];
 }
+export interface ProductCardProps {
+  products: Product[]; 
+  hideText?: boolean;
+}

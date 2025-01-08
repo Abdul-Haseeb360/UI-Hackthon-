@@ -8,7 +8,6 @@ import State from '../Components/State'
 import VideoCard from '../Components/VideoCard'
 import Content from '../Components/Content'
 import WorkWithUs from '../Components/WorkWithUs'
-import { Container } from '../Components/Container'
 
 function About() {
   return (

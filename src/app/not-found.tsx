@@ -1,5 +1,5 @@
 import React from "react";
-import Navbar from "./Components/Light-navbar";
+import Navbar from "./Components/General-Navbar";
 import Footer from "./Components/Footer";
 import Link from "next/link";
 
