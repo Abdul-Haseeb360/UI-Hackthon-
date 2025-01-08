@@ -1,16 +1,10 @@
 import React from 'react'
+import { stats } from '@/constant/data';
 
 function State() {
-
-  const stats = [
-    { number: "15K", text: "Happy Customers" },
-    { number: "150K", text: "Monthly Visitors" },
-    { number: "15", text: "Countries Worldwide" },
-    { number: "100+", text: "Top Partners" },
-  ]
   return (
     <div>
-      <div className="w-full h-[264px]">
+      <div className="w-full container mx-auto h-[264px]">
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-0 py-12 sm:py-16 md:py-20 px-4">
       {stats.map((stat, index) => (
         <div key={index} className="text-center">

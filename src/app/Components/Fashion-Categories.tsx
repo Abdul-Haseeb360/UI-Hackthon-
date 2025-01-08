@@ -8,7 +8,7 @@ import Produc4 from "../../../public/Images/Product4.png";
 
 function ShopCards() {
   return (
-    <div className="bg-[#FAFAFA] lg:h-[770px] sm:h-full mb-20">
+    <div className="bg-[#FAFAFA] lg:h-[770px] h-[1750px]  ">
       <div className="w-full bg-[#FAFAFA] text-white">
         <div className="max-w-7xl mx-auto px-4 py-12">
           <div className="text-center mb-12">

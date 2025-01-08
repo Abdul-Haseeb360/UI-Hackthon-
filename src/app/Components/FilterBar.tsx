@@ -1,55 +1,55 @@
-import React from 'react'
+"use client"
+import { ChevronDown, Grid, List } from 'lucide-react'
+import React, { useState } from 'react'
 
 function FilterBar() {
+  const [viewMode, setViewMode] = useState<'grid' | 'list'>('grid')
   return (
-    <div>
-      <div className="flex justify-between items-center px-4 py-2  bg-white border border-gray-300 h-[98px] rounded-md">
-      {/* Left Section */}
-      <div>
-    
-      <div className="text-[#737373] font-bold text-base ml-[195px]">
-        Showing all <span className="font-bold text-[#737373]">12 results</span>
+    <div className="bg-white lg:my-0 my-5 rounded-md lg:px-8   xl:justify-center xl:gap-52 sm:px-5 space-y-4 sm:space-y-0 sm:flex sm:justify-between lg:h-[98px] sm:items-center">
+      {/* Results Count */}
+      <div className="text-center sm:text-left">
+        <div className="text-[#737373] font-bold text-sm sm:text-base">
+          Showing all <span className="font-bold text-[#737373]">12 results</span>
+        </div>
       </div>
 
-      </div>
-      {/* Middle Section */}
-      <div className="flex items-center space-x-4">
-        <span className="text-gray-500 font-bold text-[14px] leading-[24px] ">Views:</span>
-        {/* Grid View Button */}
-        <button className="p-2 border border-gray-300 rounded-md hover:bg-gray-100">
-          <div className="w-4 h-4 grid grid-cols-2 gap-0.5">
-            <div className="bg-gray-800"></div>
-            <div className="bg-gray-800"></div>
-            <div className="bg-gray-800"></div>
-            <div className="bg-gray-800"></div>
-          </div>
-        </button>
-        {/* List View Button */}
-        <button className="p-2 border border-gray-300 rounded-md hover:bg-gray-100">
-          <div className="w-4 h-4 flex flex-col gap-0.5">
-            <div className="h-1 bg-gray-800"></div>
-            <div className="h-1 bg-gray-800"></div>
-            <div className="h-1 bg-gray-800"></div>
-          </div>
-        </button>
+      {/* View Toggle and Sort */}
+      <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
+        {/* View Toggle */}
+        <div className="flex items-center space-x-2">
+          <span className="text-gray-500 font-bold text-xs sm:text-sm">Views:</span>
+          <button 
+            className={`p-2 border border-gray-300 rounded-md hover:bg-gray-100 ${viewMode === 'grid' ? 'bg-gray-100' : ''}`}
+            onClick={() => setViewMode('grid')}
+          >
+            <Grid className="w-4 h-4 text-gray-800" />
+          </button>
+          <button 
+            className={`p-2 border border-gray-300 rounded-md hover:bg-gray-100 ${viewMode === 'list' ? 'bg-gray-100' : ''}`}
+            onClick={() => setViewMode('list')}
+          >
+            <List className="w-4 h-4 text-gray-800" />
+          </button>
+        </div>
+
+        {/* Sort Dropdown */}
+        <div className="relative w-full sm:w-auto px-5 lg:px-2">
+          <select className="w-full sm:w-auto appearance-none p-2 pr-8 border border-gray-300 rounded-md text-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400">
+            <option>Popularity</option>
+            <option>Newest</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+          </select>
+          <ChevronDown className="absolute right-6 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-500 pointer-events-none" />
+        </div>
       </div>
 
-      {/* Right Section */}
-      <div className="flex items-center space-x-4 mr-[195px]">
-        {/* Dropdown */}
-        <select className="p-2 border border-gray-300 rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-400">
-          <option>Popularity</option>
-          <option>Newest</option>
-          <option>Price: Low to High</option>
-          <option>Price: High to Low</option>
-        </select>
-        {/* Filter Button */}
-        <button className="px-4 py-2 bg-[#23A6F0] text-white font-medium rounded-md hover:bg-blue-600">
+      {/* Filter Button */}
+      <div className="flex justify-center sm:justify-end">
+        <button className="px-4 py-2 bg-[#23A6F0] text-white font-medium text-sm rounded-md hover:bg-blue-600 transition-colors duration-200">
           Filter
         </button>
       </div>
-
-    </div>
     </div>
   )
 }

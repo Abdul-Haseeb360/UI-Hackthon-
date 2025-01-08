@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { ArrowRight, Menu, X } from 'lucide-react'
 
 function ResponsiveNavbar() {
@@ -12,8 +12,8 @@ function ResponsiveNavbar() {
   }
 
   return (
-    <div className="w-full bg-white">
-      <div className="container mx-auto px-4">
+    <div id="responsive-navbar" className="w-full bg-white ">
+      <div className="container mx-auto px-4 lg:px-10">
         <div className="flex h-20 items-center justify-between">
           <Link href="/">
             <h3 className='text-2xl font-bold text-[#252B42]'>
@@ -32,7 +32,7 @@ function ResponsiveNavbar() {
             <Link href="/blog" className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500">
               Pricing
             </Link>
-            <Link href="/contact" className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500">
+            <Link href="/Contact" className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500">
               Contact
             </Link>
           </nav>
@@ -54,7 +54,7 @@ function ResponsiveNavbar() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="lg:hidden">
+          <div className="lg:hidden absolute top-20 left-0 right-0 bg-white">
             <nav className="flex flex-col items-center gap-4 py-4">
               <Link href="/" className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500">
                 Home
@@ -65,7 +65,7 @@ function ResponsiveNavbar() {
               <Link href="/blog" className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500">
                 Pricing
               </Link>
-              <Link href="/contact" className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500">
+              <Link href="/Contact" className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500">
                 Contact
               </Link>
               <Link href="/login" className="text-[14px] leading-[22px] font-bold text-[#23A6F0] hover:text-blue-600">

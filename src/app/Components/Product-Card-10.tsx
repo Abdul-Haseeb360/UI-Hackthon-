@@ -1,15 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import Pagination from "./Pagination";
-interface Product {
-  id: number;
-  name: string;
-  department: string;
-  originalPrice: number;
-  salePrice: number;
-  image: string;
-  colors: string[];
-}
+import { Product } from "@/types/index";
 
 interface ProductCardProps {
   products: Product[]; 
@@ -20,9 +12,9 @@ const ProductCard: React.FC<ProductCardProps> = ({ products, hideText = false })
   return (
     <div className="h-auto mb-20 bg-white">
       {!hideText && (
-        <div className="mt-20">
-          <div className="">
-            <h4 className="font-normal text-[20px] leading-[30px] text-center text-[#737373]">
+        <div >
+          <div >
+            <h4 className="font-normal text-[20px] pt-20 leading-[30px] text-center text-[#737373]">
               Featured Products
             </h4>
             <h3 className="font-bold pt-3 text-[20px] leading-[30px] text-center text-[#252B42]">

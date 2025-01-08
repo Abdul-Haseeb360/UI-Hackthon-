@@ -6,8 +6,9 @@ import ProductCard from "./Components/Product-Card-10";
 import ClassicProduct from "./Components/Classic-Product";
 import FeaturedPosts from "./Components/Featured-Posts";
 import Footer from "./Components/Footer";
-import { products } from "@/constant/products.data";
+import { products } from "@/constant/data";
 import NeuralUniverse from "./Components/NeuralUniverse";
+import { Container } from "./Components/Container";
 
 export default function Home() {
   return (

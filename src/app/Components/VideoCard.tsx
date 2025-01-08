@@ -1,17 +1,24 @@
-import Image from 'next/image'
-import React from 'react'
-import Video from "../../../public/Images/Video card.png"
+"use client"
+import React from "react";
+import { Container } from "../Components/Container";
 
 function VideoCard() {
   return (
     <div>
-      <div className="h-[764px] w-auto">
-    <div className="py-[112px] px-[226px] text-center">
-        <Image src={Video} alt=''/>
+      <Container>
+      <div className="lg:h-[764px] container mx-auto w-auto">
+        <div className="py-[112px] px-8 text-center">
+          <video className="rounded-lg shadow-lg" height={540} controls loop autoPlay >
+            <source src="/video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      </Container>
     </div>
-</div>
-    </div>
-  )
+  );
 }
 
-export default VideoCard
+export default VideoCard;
+
+

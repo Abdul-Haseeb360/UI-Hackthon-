@@ -3,14 +3,16 @@ import AboutNavebar from '../Components/AboutNavebar'
 import AboutHeroSection from '../Components/AboutHeroSection'
 import Footer from '../Components/Footer'
 import OurTeam from "../Components/OurTeam"
-import OurClient from '../Components/OurClient'
+import OurClient from '../Components/ComponySection'
 import State from '../Components/State'
 import VideoCard from '../Components/VideoCard'
 import Content from '../Components/Content'
+import WorkWithUs from '../Components/WorkWithUs'
+import { Container } from '../Components/Container'
 
 function About() {
   return (
-    <div className='overflow-hidden'>
+    <div >
      <AboutNavebar/>
      <AboutHeroSection/>
      <Content/> 
@@ -18,7 +20,8 @@ function About() {
      <VideoCard/>
      <OurTeam/>
      <OurClient/>
-     <Footer/>
+     <WorkWithUs/>
+     <Footer bgColor="white"/>
     </div>
   )
 }

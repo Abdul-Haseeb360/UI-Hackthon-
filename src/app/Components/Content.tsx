@@ -3,7 +3,7 @@ import React from 'react'
 function Content() {
   return (
     <div>
-       <div className="w-full  flex flex-1 justify-center lg:h-[236px] sm:h-full  ">
+       <div className="w-full container mx-auto flex flex-1 justify-center lg:h-[236px] sm:h-full  ">
         <div className="my-6 ">
           <p className=" font-normal text-sm text-[#E74040] px-8 py-6 ">
             Problems trying

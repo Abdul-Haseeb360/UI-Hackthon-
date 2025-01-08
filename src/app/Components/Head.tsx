@@ -16,8 +16,8 @@ interface NavbarProps {
 function Navbar({ bgColor = "bg-red-900"}: NavbarProps ) {
   return (
     <div>
-      <div className={`w-full ${bgColor} text-white hidden lg:block `}>
-        <div className="container mx-auto px-4">
+      <div className={`w-full ${bgColor} text-white hidden lg:block lg:w-full `}>
+        <div className="container mx-auto ">
           <div className="flex h-12 items-center justify-between text-sm">
             <div className="flex items-center gap-6">
               <div className="flex items-center gap-2">

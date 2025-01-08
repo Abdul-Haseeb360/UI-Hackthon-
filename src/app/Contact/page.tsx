@@ -1,9 +1,16 @@
 import React from 'react'
+import ResponsiveNavbar from '../Components/AboutNavebar'
+import Footer from '../Components/Footer'
+import ContactHerosection from '../Components/ContactHerosection'
+import BusinessesIdea from "../Components/BusinessesIdea"
 
 function Contact() {
   return (
     <div>
-      <h1>This ois Contact page</h1>
+<ResponsiveNavbar/>
+<ContactHerosection/>
+<BusinessesIdea/>
+<Footer/>
     </div>
   )
 }

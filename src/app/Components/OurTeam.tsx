@@ -27,8 +27,8 @@ function TeamSection() {
   return (
     <section className="py-16">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-gray-800">Meet Our Team</h2>
-        <p className="mt-2 text-gray-600">
+        <h2 className="text-3xl font-bold text-[#252B42]">Meet Our Team</h2>
+        <p className="mt-2 text-[#737373]">
           Problems trying to resolve the conflict between <br />
           the two major realms of Classical physics: Newtonian mechanics
         </p>
@@ -41,11 +41,13 @@ function TeamSection() {
             <Image
               src={member.image}
               alt={member.name}
+              width={300}
+              height={200}
               className="w-full h-72 object-cover mb-4"
             />
             {/* Name and Profession */}
-            <h3 className="text-lg font-semibold text-gray-800">{member.name}</h3>
-            <p className="text-gray-600">{member.profession}</p>
+            <h3 className="text-lg font-bold text-[#252B42]">{member.name}</h3>
+            <h6 className="text-[#737373] font-bold text-base">{member.profession}</h6>
 
             {/* Social Icons */}
             <div className="flex justify-center gap-4 mt-4">

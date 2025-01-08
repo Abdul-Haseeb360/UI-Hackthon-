@@ -1,6 +1,6 @@
 import React from 'react'
 import { Card, CardContent } from "@/components/ui/card"
-import { AlarmClock, AreaChart, AreaChartIcon } from 'lucide-react'
+import { AlarmClock, AreaChart } from 'lucide-react'
 import Image from 'next/image'
 function FeaturedPosts() {
 
@@ -22,7 +22,7 @@ function FeaturedPosts() {
       comments: 10,
     },
     {
-      image: "/Images/Umbrailla.png?height=400&width=600",
+      image: "/Images/Umbrailla.png",
       tags: ["Google", "Trending", "New"],
       title: "Loudest à la Madison #1 (L'integral)",
       description: "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
@@ -49,6 +49,8 @@ function FeaturedPosts() {
               <Image
                 src={post.image}
                 alt={post.title}
+                width={600}
+                height={400}
                 className="w-full h-48 sm:h-56 lg:h-64 object-fill"
               />
             </div>
