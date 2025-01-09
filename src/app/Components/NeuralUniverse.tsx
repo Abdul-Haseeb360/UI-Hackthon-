@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import Univers from "../../../public/images/col-md-6.png";
+const univers = "/images/col-md-6.png" 
 
 function NeuralUniverse() {
   return (
@@ -10,7 +10,7 @@ function NeuralUniverse() {
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:mx-0 ml-12">
             <Image 
-              src={Univers} 
+              src={univers} 
               alt="Universe illustration" 
               width={704} 
               height={682}

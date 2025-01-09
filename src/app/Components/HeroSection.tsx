@@ -1,14 +1,14 @@
 import React from "react";
-import herosetion from "../../../public/images/Herosection.jpg";
 import Image from "next/image";
 import Link from "next/link";
+const heroSetion = "/images/heroSection.jpg";
 
 function HeroSection() {
   return (
     <div className="lg:w-full">
       <section className="relative h-[400px] sm:h-[500px] md:h-[600px] lg:h-[716px] ">
         <Image
-          src={herosetion}
+          src={heroSetion}
           alt="Hero Section Image"
           fill
           className="object-cover "
