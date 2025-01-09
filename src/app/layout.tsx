@@ -3,7 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 // import LocomotiveProvider from "./Components/LocomotiveProvider";
 const inter = Inter({ subsets: ["latin"] });
-import { LocomotiveScrollProvider } from "./context/LocomotiveScrollContext";
+import LocomotiveScrollProvider from "./context/LocomotiveScrollContext"
 
 export const metadata: Metadata = {
   title: "E-commerce",

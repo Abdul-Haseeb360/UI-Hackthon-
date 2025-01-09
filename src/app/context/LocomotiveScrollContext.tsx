@@ -1,47 +1,45 @@
 "use client";
 
-import React, { createContext, useContext, useEffect, useRef } from "react";
-import LocomotiveScroll from "locomotive-scroll";
+import { useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import "locomotive-scroll/dist/locomotive-scroll.css";
 
-const LocomotiveScrollContext = createContext<any>(null);
 
-export const useLocomotiveScroll = () => useContext(LocomotiveScrollContext);
+interface ScrollProviderProps {
+  children: React.ReactNode;
+}
 
-export const LocomotiveScrollProvider = ({ children }: { children: React.ReactNode }) => {
-  const scrollRef = useRef<LocomotiveScroll | null>(null);
+export default function ScrollProvider({ children }: ScrollProviderProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname(); // Detect route changes
 
   useEffect(() => {
+    let scrollInstance: any;
+
+    // Initialize Locomotive Scroll only in the browser
     if (containerRef.current) {
-      scrollRef.current = new LocomotiveScroll({
-        el: containerRef.current,
-        smooth: true,
-        multiplier: 1,
-      });
-
-      // Cleanup scroll on component unmount
-      return () => {
-        scrollRef.current?.destroy();
+      const initScroll = async () => {
+        const LocomotiveScroll = (await import("locomotive-scroll")).default;
+        scrollInstance = new LocomotiveScroll({
+          el: containerRef.current as HTMLElement, 
+          smooth: true,
+          smartphone: { smooth: true },
+          // tablet: { smooth: true },
+        });
       };
-    }
-  }, []);
 
-  // Reset scroll position on route change
-  useEffect(() => {
-    if (scrollRef.current) {
-      scrollRef.current.update();
-      scrollRef.current.scrollTo(0, { duration: 0 }); // Reset to top
+      initScroll();
     }
-  }, [pathname]);
+
+    return () => {
+      // Clean up scroll instance on unmount
+      if (scrollInstance) scrollInstance.destroy();
+    };
+  }, [pathname]); // Reinitialize on route change
 
   return (
-    <LocomotiveScrollContext.Provider value={scrollRef.current}>
-      <div data-scroll-container ref={containerRef}>
-        {children}
-      </div>
-    </LocomotiveScrollContext.Provider>
+    <div ref={containerRef} data-scroll-container>
+      {children}
+    </div>
   );
-};
+}
