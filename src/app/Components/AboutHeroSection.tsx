@@ -1,12 +1,11 @@
 import Image from "next/image";
 import React from "react";
-import Abouthero from "../../../public/images/AboutHerobg.png";
 import { Button } from "@/components/ui/button";
-
+const aboutHeroImage = "/images/AboutHerobg.png"; 
 function AboutHeroSection() {
   return (
-    <div > 
-      <section className="md:py-24 overflow-hidden">
+    <div> 
+      <section className=" overflow-hidden">
         <div className="container mx-auto px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Text Content */}
@@ -30,7 +29,7 @@ function AboutHeroSection() {
             {/* Image */}
             <div className="relative w-full h-[300px] md:h-[400px] lg:h-[612px] mt-8 lg:mt-0">
               <Image
-                src={Abouthero}
+                src={aboutHeroImage}
                 alt="About Us"
                 fill
                 className="rounded-lg object-cover"

@@ -12,8 +12,8 @@ function ResponsiveNavbar() {
   }
 
   return (
-    <div id="responsive-navbar" className="w-full bg-white ">
-      <div className="container mx-auto px-4 lg:px-10">
+    <div id="responsive-navbar" className="w-full bg-white mb-0">
+      <div className="container mx-auto px-4 lg:px-10 ">
         <div className="flex h-20 items-center justify-between">
           <Link href="/">
             <h3 className='text-2xl font-bold text-[#252B42]'>
@@ -26,13 +26,13 @@ function ResponsiveNavbar() {
             <Link href="/" className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500">
               Home
             </Link>
-            <Link href="/About" className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500">
+            <Link href="/about" className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500">
               Product
             </Link>
             <Link href="/blog" className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500">
               Pricing
             </Link>
-            <Link href="/Contact" className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500">
+            <Link href="/contact" className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500">
               Contact
             </Link>
           </nav>

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
-import hero from "../../../public/images/shop-hero-2-png-picture-1.png";
+// import hero from "../../../public/images/shop-hero-2-png-picture-1.png";
+const hero = "/images/shop-hero-2-png-picture-1.png";
 function ClassicProduct() {
   return (
     <div>
@@ -13,16 +14,14 @@ function ClassicProduct() {
               <span className="text-lg font-normal text-[20px] leading-[30px]">
                 SUMMER 2020
               </span>
-              <h1 className="text-[58px] leading-[80px] md:text-6xl font-bold mt-[30px] ">
-                Vita Classic
-                <br />
-                Product
+              <h1 className="lg:text-[58px] leading-[80px] md:text-6xl text-[40px] font-bold mt-[30px]">
+                Vita Classic Product
               </h1>
-              <p className="font-normal text-sm text-white  max-w-md">
+              <p className="font-normal text-sm text-white text-[16px]  max-w-md">
                 We know how large objects will act, We know how  <br/> are objects will
                 act, We know
               </p>
-              <div className="flex items-center gap-4 my-8 lg:my-0 ">
+              <div className="flex items-center gap-4 my-8 lg:my-8 ">
                 <span className="font-bold text-[24px] leading-[32px] pr-8 ">
                   $16.48
                 </span>

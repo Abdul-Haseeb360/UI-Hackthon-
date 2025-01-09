@@ -11,7 +11,7 @@ import { products } from "@/constant/data";
 
 function page() {
   return (
-    <div>
+    <div >
       <Head bgColor="bg-[#23856D]" />
       <Navbar />
       <div className="w-full bg-[#FAFAFA] h-[92px] py-4 lg:w-full xl:max-w-screen-2xl xl:mx-auto">

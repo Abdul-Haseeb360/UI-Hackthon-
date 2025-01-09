@@ -17,9 +17,9 @@ function HeroSection() {
         {/* Overlay Text */}
         
        <div className="container">
-       <div className="absolute inset-0 mt-[112px] container mx-auto">
+       <div className="absolute inset-0 lg:my-[208px] my-20 container mx-auto">
           <div className="text-white px-4 sm:px-8 md:px-16 lg:px-[197px] xl:px-0 max-w-[90%] md:max-w-[70%] lg:max-w-[60%] xl:max-w-[50%]">
-            <h5 className="text-[14px] sm:text-[16px] leading-[24px] font-bold uppercase tracking-wide">
+            <h5 className="text-[16px] leading-[24px] font-bold uppercase tracking-wide">
               Summer 2020
             </h5>
             <h1 className="text-[32px] sm:text-[40px] md:text-[48px] lg:text-[58px] leading-[1.2] font-bold mt-4 sm:mt-[35px]">

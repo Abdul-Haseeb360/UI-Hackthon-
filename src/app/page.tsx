@@ -11,7 +11,7 @@ import NeuralUniverse from "./Components/NeuralUniverse";
 
 export default function Home() {
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden ">
       <Head bgColor="bg-slate-900" />
       <Navbar />
       <HeroSection />

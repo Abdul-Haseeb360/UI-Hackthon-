@@ -22,14 +22,14 @@ export default function Navbar() {
               Home
             </Link>
             <div className="relative group">
-              <button className="flex items-center gap-1 text-[14px] leading-[28px] font-medium text-[#252B42] hover:text-blue-500">
-                <Link href="/Shop">Shop</Link>
+              <button className="flex items-center gap-1 text-[14px] leading-[28px] font-bold text-[#737373] hover:text-blue-500">
+                <Link href="/shop">Shop</Link>
                 <ChevronDown className="h-4 w-4" />
               </button>
               {/* Add dropdown menu here if needed */}
             </div>
             <Link
-              href="/About"
+              href="/about"
               className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500"
             >
               About
@@ -41,7 +41,7 @@ export default function Navbar() {
               Blog
             </Link>
             <Link
-              href="/Contact"
+              href="/contact"
               className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500"
             >
               Contact
@@ -108,26 +108,26 @@ export default function Navbar() {
                     Home
                   </Link>
                   <Link
-                    href="/Shop"
+                    href="/shop"
                     className="text-xl font-semibold flex justify-between items-center text-[#252B42] hover:text-blue-500"
                   >
                     Shop
                     <ChevronDown className="h-4 w-4" />
                   </Link>
                   <Link
-                    href="/About"
+                    href="/about"
                     className="text-xl font-semibold text-[#252B42] hover:text-blue-500"
                   >
                     About
                   </Link>
                   <Link
-                    href="/Blog"
+                    href="/blog"
                     className="text-xl font-semibold text-[#252B42] hover:text-blue-500"
                   >
                     Blog
                   </Link>
                   <Link
-                    href="/Contact"
+                    href="/contact"
                     className="text-xl font-semibold text-[#252B42] hover:text-blue-500"
                   >
                     Contact

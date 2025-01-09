@@ -47,7 +47,7 @@ function Footer({ bgColor = "bg-[#FAFAFA]" }: FooterProps) {
       </div>
 
       <div className="container px-2 my-[50px] mx-auto ">
-        <div className="grid grid-cols-2  mx-4 md:grid-cols-2 lg:grid-cols-6 ">
+        <div className="grid grid-cols-2  mx-4 md:grid-cols-2 lg:grid-cols-6 gap-6 ">
           {/* Company Info */}
           <div>
             <h3 className="mb-6 text-base font-bold text-[#252B42]">
@@ -130,7 +130,7 @@ function Footer({ bgColor = "bg-[#FAFAFA]" }: FooterProps) {
 
           {/* Features */}
           <div>
-            <h3 className="mb-6 text-base font-bold text-[#252B42]">
+            <h3 className="mb-6 text-base  font-bold text-[#252B42]">
               Features
             </h3>
             <ul className="space-y-4 font-bold text-base">
@@ -235,8 +235,8 @@ function Footer({ bgColor = "bg-[#FAFAFA]" }: FooterProps) {
         </div>
       </div>
 
-      <div className="h-[74px] bg-[#FAFAFA] ">
-        <h6 className="font-bold text-[14] leading-[24px] text-[#737373] py-6 lg:px-[127px] text-center">
+      <div className=" bg-[#FAFAFA] ">
+        <h6 className="font-bold leading-[24px] lg:text-[16px] text-[12px] text-[#737373] py-4 text-center">
           Made With Love By Finland All Right Reserved
         </h6>
       </div>

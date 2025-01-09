@@ -5,8 +5,8 @@ import Univers from "../../../public/images/col-md-6.png";
 function NeuralUniverse() {
   return (
     <div>
-       <div className="bg-white">
-      <div className="container mx-auto px-4 py-8 lg:py-16">
+       <div className="">
+      <div className="container mx-auto px-4  lg:py-4 ">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="w-full lg:w-1/2 mb-8 lg:mb-0 lg:mx-0 ml-12">
             <Image 

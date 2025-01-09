@@ -9,8 +9,8 @@ function FeaturedPosts() {
   return (
     <div>
 
-<section className="container mx-auto px-4 py-12 sm:py-16 lg:py-20">
-      <div className="text-center mb-8 sm:mb-12">
+<section className="container mx-auto px-4 py-12 sm:py-16 lg:py-[112px] ">
+      <div className="text-center mb-8 sm:mb-12  ">
         <h3 className="text-[#23A6F0] font-bold text-sm sm:text-base mb-2 sm:mb-3">Practice Advice</h3>
         <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-800 mb-3 sm:mb-4">Featured Posts</h2>
         <p className="text-[#737373] font-normal text-sm sm:text-base max-w-2xl mx-auto">

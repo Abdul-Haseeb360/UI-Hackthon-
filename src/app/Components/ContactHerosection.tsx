@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import Contacthero from "../../../public/images/none.png";
+const contactHero = "/images/contactHero.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -13,7 +13,7 @@ import {
 function ContactHeroSection() {
   return (
     <div className=""> 
-      <section className="md:py-24 overflow-hidden">
+      <section className=" overflow-hidden">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             {/* Text Content */}
@@ -45,7 +45,7 @@ function ContactHeroSection() {
             {/* Image */}
             <div className="relative w-full h-[300px] md:h-[400px] lg:h-[612px] mt-8 lg:mt-0">
               <Image
-                src={Contacthero}
+                src={contactHero}
                 alt="Contact Us"
                 fill
                 className="rounded-lg object-contain"

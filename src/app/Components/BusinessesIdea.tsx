@@ -1,7 +1,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Arrow from "../../../public/images/Arrow.png";
 import { contactCards } from "@/constant/data"
+const arrow = "/images/arrow.png";
+
 export default function ContactSection() {
   return (
     <div>
@@ -70,7 +71,7 @@ export default function ContactSection() {
 
     <section className="w-full md:py-24">
       <div className='flex justify-center pb-5'>
-      <Image src={Arrow} alt=''/>
+      <Image src={arrow} alt='' width={100} height={100}/>
       </div>
       <div className="container mx-auto px-4">
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto">
