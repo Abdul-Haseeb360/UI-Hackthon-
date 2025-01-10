@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "@/components/ui/button";
-const aboutHeroImage = "/images-v2/AboutHerobg.png"; 
+const aboutHeroImage = "/images-v2/aboutHerobg.png"; 
 function AboutHeroSection() {
   return (
     <div> 
