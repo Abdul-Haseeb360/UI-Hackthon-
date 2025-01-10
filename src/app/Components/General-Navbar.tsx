@@ -2,7 +2,7 @@ import Link from "next/link"
 import { Search, ShoppingCart, Heart, Menu, ChevronDown } from 'lucide-react'
 import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
 
-export default function Navbar() {
+export default function   Navbar() {
   return (
     <div className="w-full bg-white">
       <div className="container mx-auto px-4 lg:px-0 ">
