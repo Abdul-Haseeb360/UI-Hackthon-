@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-const heroSetion = "/images/heroSection.jpg";
+const heroSetion = "/images-v2/heroSection.jpg";
 
 function HeroSection() {
   return (

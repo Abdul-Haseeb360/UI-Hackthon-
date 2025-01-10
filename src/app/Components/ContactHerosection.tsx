@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-const contactHero = "/images/contactHero.png";
+const contactHero = "/images-v2/contactHero.png";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

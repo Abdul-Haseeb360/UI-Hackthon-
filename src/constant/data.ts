@@ -8,7 +8,7 @@ export const products: Product[] = [
     department: "English Department",
     originalPrice: 16.48,
     salePrice: 6.48,
-    image: "/images/1.png",
+    image: "/images-v2/1.png",
     colors: ["#23A6F0", "#23856D", "#E77C40", "#252B42"],
   },
   {
@@ -17,7 +17,7 @@ export const products: Product[] = [
     department: "English Department",
     originalPrice: 16.48,
     salePrice: 6.48,
-    image: "/images/2.png",
+    image: "/images-v2/2.png",
     colors: ["#23A6F0", "#23856D", "#E77C40", "#252B42"],
   },
   {
@@ -26,7 +26,7 @@ export const products: Product[] = [
     department: "English Department",
     originalPrice: 16.48,
     salePrice: 6.48,
-    image: "/images/3.png",
+    image: "/images-v2/3.png",
     colors: ["#23A6F0", "#23856D", "#E77C40", "#252B42"],
   },
   {
@@ -35,7 +35,7 @@ export const products: Product[] = [
     department: "English Department",
     originalPrice: 16.48,
     salePrice: 6.48,
-    image: "/images/4.png",
+    image: "/images-v2/4.png",
     colors: ["#23A6F0", "#23856D", "#E77C40", "#252B42"],
   },
   {
@@ -44,7 +44,7 @@ export const products: Product[] = [
     department: "English Department",
     originalPrice: 16.48,
     salePrice: 6.48,
-    image: "/images/5.png",
+    image: "/images-v2/5.png",
     colors: ["#23A6F0", "#23856D", "#E77C40", "#252B42"],
   },
   {
@@ -53,7 +53,7 @@ export const products: Product[] = [
     department: "English Department",
     originalPrice: 16.48,
     salePrice: 6.48,
-    image: "/images/6.png",
+    image: "/images-v2/6.png",
     colors: ["#23A6F0", "#23856D", "#E77C40", "#252B42"],
   },
   {
@@ -62,7 +62,7 @@ export const products: Product[] = [
     department: "English Department",
     originalPrice: 16.48,
     salePrice: 6.48,
-    image: "/images/7.png",
+    image: "/images-v2/7.png",
     colors: ["#23A6F0", "#23856D", "#E77C40", "#252B42"],
   },
   {
@@ -71,27 +71,27 @@ export const products: Product[] = [
     department: "English Department",
     originalPrice: 16.48,
     salePrice: 6.48,
-    image: "/images/8.png",
+    image: "/images-v2/8.png",
     colors: ["#23A6F0", "#23856D", "#E77C40", "#252B42"],
   },
 ];
 
 export const items = [
-  { id: 1, src: "/images/9.png", title: "CLOTHS", count: "5 Items" },
-  { id: 2, src: "/images/10.png", title: "CLOTHS", count: "5 Items" },
-  { id: 3, src: "/images/11.png", title: "CLOTHS", count: "5 Items" },
-  { id: 4, src: "/images/12.png", title: "CLOTHS", count: "5 Items" },
-  { id: 5, src: "/images/13.png", title: "CLOTHS", count: "5 Items" },
+  { id: 1, src: "/images-v2/9.png", title: "CLOTHS", count: "5 Items" },
+  { id: 2, src: "/images-v2/10.png", title: "CLOTHS", count: "5 Items" },
+  { id: 3, src: "/images-v2/11.png", title: "CLOTHS", count: "5 Items" },
+  { id: 4, src: "/images-v2/12.png", title: "CLOTHS", count: "5 Items" },
+  { id: 5, src: "/images-v2/13.png", title: "CLOTHS", count: "5 Items" },
 ];
 
 
 export const defaultCompanies: Company[] = [
-  { name: "Hooli", url: "/images/hooli.png" },
-  { name: "Lyft", url: "/images/lyft.png" },
-  { name: "Feather", url: "/images/MercadoLibre.png" },
-  { name: "Stripe", url: "/images/stripe.png" },
-  { name: "AWS", url: "/images/aws.png" },
-  { name: "Reddit", url: "/images/Reddit.png" },
+  { name: "Hooli", url: "/images-v2/hooli.png" },
+  { name: "Lyft", url: "/images-v2/lyft.png" },
+  { name: "Feather", url: "/images-v2/MercadoLibre.png" },
+  { name: "Stripe", url: "/images-v2/stripe.png" },
+  { name: "AWS", url: "/images-v2/aws.png" },
+  { name: "Reddit", url: "/images-v2/Reddit.png" },
 ];
 export const stats = [
   { number: "15K", text: "Happy Customers" },
@@ -121,7 +121,7 @@ export const contactCards = [
 
 export const posts = [
   {
-    image: "/images/Road.png",
+    image: "/images-v2/Road.png",
     tags: ["Google", "Trending", "New"],
     title: "Loudest à la Madison #1 (L'integral)",
     description: "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
@@ -129,7 +129,7 @@ export const posts = [
     comments: 10,
   },
   {
-    image: "/images/Car.png",
+    image: "/images-v2/Car.png",
     tags: ["Google", "Trending", "New"],
     title: "Loudest à la Madison #1 (L'integral)",
     description: "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
@@ -137,7 +137,7 @@ export const posts = [
     comments: 10,
   },
   {
-    image: "/images/Umbrailla.png",
+    image: "/images-v2/Umbrailla.png",
     tags: ["Google", "Trending", "New"],
     title: "Loudest à la Madison #1 (L'integral)",
     description: "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
@@ -149,19 +149,19 @@ export const posts = [
 export const teamMembers = [
   {
     id: 1,
-    image: "/images/Memeber1.png", // Replace with actual image path
+    image: "/images-v2/Memeber1.png", // Replace with actual image path
     name: "Username",
     profession: "Profession",
   },
   {
     id: 2,
-    image: "/images/Memeber2.png", // Replace with actual image path
+    image: "/images-v2/Memeber2.png", // Replace with actual image path
     name: "Username",
     profession: "Profession",
   },
   {
     id: 3,
-    image: "/images/Memeber3.jpg", // Replace with actual image path
+    image: "/images-v2/Memeber3.jpg", // Replace with actual image path
     name: "Username",
     profession: "Profession",
   },

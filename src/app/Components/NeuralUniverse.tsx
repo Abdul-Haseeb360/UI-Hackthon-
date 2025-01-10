@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-const univers = "/images/col-md-6.png" 
+const univers = "/images-v2/col-md-6.png" 
 
 function NeuralUniverse() {
   return (

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
-// import hero from "../../../public/images/shop-hero-2-png-picture-1.png";
-const hero = "/images/shop-hero-2-png-picture-1.png";
+// import hero from "../../../public/images-v2/shop-hero-2-png-picture-1.png";
+const hero = "/images-v2/shop-hero-2-png-picture-1.png";
 function ClassicProduct() {
   return (
     <div>

@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { contactCards } from "@/constant/data"
-const arrow = "/images/arrow.png";
+const arrow = "/images-v2/arrow.png";
 
 export default function ContactSection() {
   return (

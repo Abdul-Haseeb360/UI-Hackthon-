@@ -27,7 +27,7 @@ function WorkWithUs() {
       </div>
       <div className="relative min-h-[400px] md:min-h-full">
         <Image
-          src="/Images/Product8.png"
+          src="/images-v2/Product8.png"
           alt="Person in coral sweater"
           fill
           className="object-cover"

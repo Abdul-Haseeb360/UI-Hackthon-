@@ -1,10 +1,10 @@
 import Image from "next/image";
 import React from "react";
 
-const product1 = "/images/product1.png";
-const product2 = "/images/product2.png";
-const product3 = "/images/accessories.png";
-const product4 = "/images/product4.png";
+const product1 = "/images-v2/product1.png";
+const product2 = "/images-v2/product2.png";
+const product3 = "/images-v2/accessories.png";
+const product4 = "/images-v2/product4.png";
 
 function ShopCards() {
   return (
