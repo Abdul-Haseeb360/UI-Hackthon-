@@ -23,13 +23,13 @@ export default function   Navbar() {
             </Link>
             <div className="relative group">
               <button className="flex items-center gap-1 text-[14px] leading-[28px] font-bold text-[#737373] hover:text-blue-500">
-                <Link href="/shop">Shop</Link>
+                <Link href="/shop-v2">Shop</Link>
                 <ChevronDown className="h-4 w-4" />
               </button>
               {/* Add dropdown menu here if needed */}
             </div>
             <Link
-              href="/about"
+              href="/about-v2"
               className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500"
             >
               About
@@ -41,7 +41,7 @@ export default function   Navbar() {
               Blog
             </Link>
             <Link
-              href="/contact"
+              href="/contact-v2"
               className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500"
             >
               Contact

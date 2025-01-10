@@ -88,10 +88,10 @@ export const items = [
 export const defaultCompanies: Company[] = [
   { name: "Hooli", url: "/images-v2/hooli.png" },
   { name: "Lyft", url: "/images-v2/lyft.png" },
-  { name: "Feather", url: "/images-v2/MercadoLibre.png" },
+  { name: "Feather", url: "/images-v2/mercadoLibre.png" },
   { name: "Stripe", url: "/images-v2/stripe.png" },
   { name: "AWS", url: "/images-v2/aws.png" },
-  { name: "Reddit", url: "/images-v2/Reddit.png" },
+  { name: "Reddit", url: "/images-v2/reddit.png" },
 ];
 export const stats = [
   { number: "15K", text: "Happy Customers" },
@@ -121,7 +121,7 @@ export const contactCards = [
 
 export const posts = [
   {
-    image: "/images-v2/Road.png",
+    image: "/images-v2/road.png",
     tags: ["Google", "Trending", "New"],
     title: "Loudest à la Madison #1 (L'integral)",
     description: "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
@@ -129,7 +129,7 @@ export const posts = [
     comments: 10,
   },
   {
-    image: "/images-v2/Car.png",
+    image: "/images-v2/car.png",
     tags: ["Google", "Trending", "New"],
     title: "Loudest à la Madison #1 (L'integral)",
     description: "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
@@ -137,7 +137,7 @@ export const posts = [
     comments: 10,
   },
   {
-    image: "/images-v2/Umbrailla.png",
+    image: "/images-v2/umbrailla.png",
     tags: ["Google", "Trending", "New"],
     title: "Loudest à la Madison #1 (L'integral)",
     description: "We focus on ergonomics and meeting you where you work. It's only a keystroke away.",
@@ -149,19 +149,19 @@ export const posts = [
 export const teamMembers = [
   {
     id: 1,
-    image: "/images-v2/Memeber1.png", // Replace with actual image path
+    image: "/images-v2/memeber1.png", // Replace with actual image path
     name: "Username",
     profession: "Profession",
   },
   {
     id: 2,
-    image: "/images-v2/Memeber2.png", // Replace with actual image path
+    image: "/images-v2/memeber2.png", // Replace with actual image path
     name: "Username",
     profession: "Profession",
   },
   {
     id: 3,
-    image: "/images-v2/Memeber3.jpg", // Replace with actual image path
+    image: "/images-v2/memeber3.jpg", // Replace with actual image path
     name: "Username",
     profession: "Profession",
   },

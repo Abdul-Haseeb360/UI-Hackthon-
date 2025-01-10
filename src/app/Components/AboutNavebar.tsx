@@ -32,7 +32,7 @@ function ResponsiveNavbar() {
             <Link href="/blog" className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500">
               Pricing
             </Link>
-            <Link href="/contact" className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500">
+            <Link href="/contact-v2" className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500">
               Contact
             </Link>
           </nav>
