@@ -35,10 +35,10 @@ export default function   Navbar() {
               About
             </Link>
             <Link
-              href="/blog"
+              href="/product-v2"
               className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500"
             >
-              Blog
+              Products
             </Link>
             <Link
               href="/contact-v2"
@@ -108,26 +108,26 @@ export default function   Navbar() {
                     Home
                   </Link>
                   <Link
-                    href="/shop"
+                    href="/shop-v2"
                     className="text-xl font-semibold flex justify-between items-center text-[#252B42] hover:text-blue-500"
                   >
                     Shop
                     <ChevronDown className="h-4 w-4" />
                   </Link>
                   <Link
-                    href="/about"
+                    href="/about-v2"
                     className="text-xl font-semibold text-[#252B42] hover:text-blue-500"
                   >
                     About
                   </Link>
                   <Link
-                    href="/blog"
+                    href="/product-v2"
                     className="text-xl font-semibold text-[#252B42] hover:text-blue-500"
                   >
-                    Blog
+                    Products
                   </Link>
                   <Link
-                    href="/contact"
+                    href="/contact-v2"
                     className="text-xl font-semibold text-[#252B42] hover:text-blue-500"
                   >
                     Contact

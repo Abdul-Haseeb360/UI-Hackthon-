@@ -28,7 +28,7 @@ function HeroSection() {
             <p className="text-[16px] sm:text-[18px] md:text-[20px] leading-[1.5] mt-4 sm:mt-[35px]">
               We know how large objects will act,<br/> but things on a small scale.
             </p>
-           <Link href="/Shop">
+           <Link href="/shop-v2">
            <button className="mt-6 sm:mt-[35px] px-6 sm:px-8 md:px-10 py-3 sm:py-4 bg-[#2DC071] hover:bg-green-600 text-white font-bold text-[18px] sm:text-[20px] md:text-[24px] leading-[1.2] rounded-md shadow-lg transition duration-300">
               Shop Now
             </button>

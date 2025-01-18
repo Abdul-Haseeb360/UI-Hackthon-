@@ -28,7 +28,7 @@ export default function ScrollProvider({ children }: ScrollProviderProps) {
         scrollInstanceRef.current = new LocomotiveScroll({
           el: containerRef.current as HTMLElement,
           smooth: true,
-          smartphone: { smooth: true },
+          smartphone: { smooth: true, },
         });
 
         // Update height to avoid issues
