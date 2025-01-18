@@ -23,3 +23,19 @@ export interface ProductCardProps {
   products: Product[]; 
   hideText?: boolean;
 }
+
+export interface Products {
+  _id: string;
+  title: string;
+  description: string;
+  productImage: {
+    asset: {
+      _ref: string;
+      url: string;
+    };
+  };
+  price: number;
+  tags?: string[];
+  dicountPercentage?: number;
+  isNew?: boolean;
+}

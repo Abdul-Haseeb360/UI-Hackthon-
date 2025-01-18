@@ -82,7 +82,10 @@
 
 /* Additional styles for smooth scroll container */
 [data-scroll-container] {
-  overflow: hidden;
+  min-height: 100vh;
+}
+body{
+  scroll-behavior: none;
 }
 
 
