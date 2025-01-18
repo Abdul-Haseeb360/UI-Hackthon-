@@ -20,6 +20,8 @@ export default async function ProductsPage() {
             {product.productImage && (
               <Image
                 src={urlFor(product.productImage).width(300).url()}
+                width={300} 
+                height={200}
                 alt={product.title}
                 className="w-full h-48 object-contain rounded-t-lg mb-4"
               />
