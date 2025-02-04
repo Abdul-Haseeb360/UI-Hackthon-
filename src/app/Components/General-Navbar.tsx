@@ -1,16 +1,36 @@
-import Link from "next/link"
-import { Search, ShoppingCart, Heart, Menu, ChevronDown } from 'lucide-react'
-import { Sheet, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet"
+"use client"
+import Link from "next/link";
+import { ShoppingCart, Heart, Menu, ChevronDown } from "lucide-react";
+import {
+  Sheet,
+  SheetContent,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet";
+import { Bounce, ToastContainer, toast } from 'react-toastify';
+import SearchComponent from "./SearchComponent";
 
-export default function   Navbar() {
+
+export default function Navbar() {
+ 
+  const notify = () =>
+    toast.success('Product added Successfully!', {
+      position: "bottom-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: false,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Bounce,
+    });
   return (
     <div className="w-full bg-white">
       <div className="container mx-auto px-4 lg:px-0 ">
         <div className="flex h-16 items-center  justify-between">
           <Link href="/">
-            <h3 className="text-2xl font-bold text-[#252B42]">
-              Bandage
-            </h3>
+            <h3 className="text-2xl font-bold text-[#252B42]">Bandage</h3>
           </Link>
 
           {/* Desktop Navigation */}
@@ -63,19 +83,35 @@ export default function   Navbar() {
               <span>/</span>
               <span>Register</span>
             </Link>
-
+            {/* <Login >
+            </Login> */}
             {/* Desktop & Mobile Icons */}
             <button className="p-2 text-[#23A6F0] hover:text-blue-500">
-              <Search className="h-5 w-5" />
+              <SearchComponent />
               <span className="sr-only">Search</span>
             </button>
             <button className="p-2 text-[#23A6F0] hover:text-blue-500">
-              <div className="relative">
-                <ShoppingCart className="h-5 w-5" />
-                <span className="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-blue-500 text-[10px] text-white">
-                  1
-                </span>
-              </div>
+              <Link href="">
+
+                <button onClick={notify}> <ShoppingCart className="h-5 w-5" /></button>
+                <ToastContainer
+                  position="top-center"
+                  autoClose={5000}
+                  hideProgressBar={false}
+                  newestOnTop={false}
+                  closeOnClick={false}
+                  rtl={false}
+                  pauseOnFocusLoss
+                  draggable
+                  pauseOnHover
+                  theme="light"
+                  transition={Bounce}
+                />
+                <div className="relative">
+
+                </div>
+              </Link>
+
               <span className="sr-only">Cart</span>
             </button>
             <button className="hidden lg:block p-2 text-[#23A6F0] hover:text-blue-500">
@@ -145,6 +181,5 @@ export default function   Navbar() {
         </div>
       </div>
     </div>
-  )
+  );
 }
-
