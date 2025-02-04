@@ -9,12 +9,14 @@ import Footer from "./Components/Footer";
 import { products } from "@/constant/data";
 import NeuralUniverse from "./Components/NeuralUniverse";
 
+
 export default function Home() {
   return (
     <div className="overflow-hidden ">
       <Head bgColor="bg-slate-900" />
       <Navbar />
       <HeroSection />
+    
       <ShopCards />
       <ProductCard hideText={false} products={products} />
       <ClassicProduct />
