@@ -9,7 +9,12 @@ import {
 } from "@/components/ui/sheet";
 import { Bounce, ToastContainer, toast } from 'react-toastify';
 import SearchComponent from "./SearchComponent";
-
+import {
+  SignInButton,
+  SignedIn,
+  SignedOut,
+  UserButton
+} from '@clerk/nextjs'
 
 export default function Navbar() {
  
@@ -75,14 +80,20 @@ export default function Navbar() {
           </nav>
 
           <div className="flex items-center space-x-4 lg:space-x-6">
-            <Link
+            {/* <Link
               href="/login"
               className="hidden lg:flex items-center gap-1 text-[14px] leading-[24px] font-bold text-[#23A6F0] hover:text-blue-600"
             >
-              <span>Login</span>
-              <span>/</span>
-              <span>Register</span>
-            </Link>
+              </Link> */}
+              <div className="hidden lg:flex items-center gap-1 text-[14px]  leading-[24px] font-bold text-[#23A6F0] hover:text-blue-600">
+
+              <SignedOut>
+              <SignInButton />
+            </SignedOut>
+            <SignedIn>
+              <UserButton showName/>
+            </SignedIn>
+              </div>
             {/* <Login >
             </Login> */}
             {/* Desktop & Mobile Icons */}
@@ -91,10 +102,10 @@ export default function Navbar() {
               <span className="sr-only">Search</span>
             </button>
             <button className="p-2 text-[#23A6F0] hover:text-blue-500">
-              <Link href="">
-
-                <button onClick={notify}> <ShoppingCart className="h-5 w-5" /></button>
-                <ToastContainer
+              <Link href="/cart">
+              <ShoppingCart className="h-5 w-5" />
+                {/* <button onClick={notify}> </button> */}
+                {/* <ToastContainer
                   position="top-center"
                   autoClose={5000}
                   hideProgressBar={false}
@@ -106,12 +117,9 @@ export default function Navbar() {
                   pauseOnHover
                   theme="light"
                   transition={Bounce}
-                />
-                <div className="relative">
+                  /> */}
 
-                </div>
-              </Link>
-
+                  </Link>
               <span className="sr-only">Cart</span>
             </button>
             <button className="hidden lg:block p-2 text-[#23A6F0] hover:text-blue-500">
