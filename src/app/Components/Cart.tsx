@@ -15,7 +15,6 @@ export default function Cart() {
   return (
     <div className="container mx-auto p-6">
       <h2 className="text-3xl font-bold mb-6 text-center">Your Shopping Cart</h2>
-
       {cartItems.length === 0 ? (
         <p className="text-center text-gray-600 text-lg">Your cart is empty 🛒</p>
       ) : (

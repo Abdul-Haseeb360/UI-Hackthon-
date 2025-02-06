@@ -10,10 +10,12 @@ interface Product {
 
 interface CartState {
   items: Product[];
+  totalQuantity: number;
 }
 
 const initialState: CartState = {
   items: [],
+  totalQuantity: 0, // NEW: Track total items in cart
 };
 
 const cartSlice = createSlice({
@@ -27,18 +29,28 @@ const cartSlice = createSlice({
       } else {
         state.items.push({ ...action.payload, quantity: 1 });
       }
+      state.totalQuantity += 1; // Update total quantity
     },
     removeFromCart: (state, action: PayloadAction<string>) => {
-      state.items = state.items.filter((item) => item.id !== action.payload);
+      const itemToRemove = state.items.find((item) => item.id === action.payload);
+      if (itemToRemove) {
+        state.totalQuantity -= itemToRemove.quantity; // Deduct from total quantity
+        state.items = state.items.filter((item) => item.id !== action.payload);
+      }
     },
     decreaseQuantity: (state, action: PayloadAction<string>) => {
       const existingItem = state.items.find((item) => item.id === action.payload);
       if (existingItem && existingItem.quantity > 1) {
         existingItem.quantity -= 1;
+        state.totalQuantity -= 1; // Reduce total quantity
       }
+    },
+    clearCart: (state) => {
+      state.items = [];
+      state.totalQuantity = 0; // Reset total quantity
     },
   },
 });
 
-export const { addToCart, removeFromCart, decreaseQuantity } = cartSlice.actions;
+export const { addToCart, removeFromCart, decreaseQuantity, clearCart } = cartSlice.actions;
 export default cartSlice.reducer;
