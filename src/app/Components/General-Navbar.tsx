@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Link from "next/link";
 import { ShoppingCart, Heart, Menu, ChevronDown } from "lucide-react";
 import {
@@ -7,19 +7,15 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { Bounce, ToastContainer, toast } from 'react-toastify';
+import { Bounce, toast } from "react-toastify";
 import SearchComponent from "./SearchComponent";
-import {
-  SignInButton,
-  SignedIn,
-  SignedOut,
-  UserButton
-} from '@clerk/nextjs'
+import { SignInButton, SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+import { useSelector } from "react-redux";
+import { RootState } from "@/app/store/store";
 
 export default function Navbar() {
- 
   const notify = () =>
-    toast.success('Product added Successfully!', {
+    toast.success("Product added Successfully!", {
       position: "bottom-right",
       autoClose: 5000,
       hideProgressBar: false,
@@ -30,6 +26,12 @@ export default function Navbar() {
       theme: "light",
       transition: Bounce,
     });
+  const cartItems = useSelector((state: RootState) => state.cart.items);
+  const totalCartItems = cartItems.reduce(
+    (total, item) => total + item.quantity,
+    0
+  );
+
   return (
     <div className="w-full bg-white">
       <div className="container mx-auto px-4 lg:px-0 ">
@@ -59,12 +61,12 @@ export default function Navbar() {
             >
               About
             </Link>
-            <Link
+            {/* <Link
               href="/product-v2"
               className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500"
             >
               Products
-            </Link>
+            </Link> */}
             <Link
               href="/contact-v2"
               className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500"
@@ -85,49 +87,35 @@ export default function Navbar() {
               className="hidden lg:flex items-center gap-1 text-[14px] leading-[24px] font-bold text-[#23A6F0] hover:text-blue-600"
             >
               </Link> */}
-              <div className="hidden lg:flex items-center gap-1 text-[14px]  leading-[24px] font-bold text-[#23A6F0] hover:text-blue-600">
-
+            <div className="hidden lg:flex items-center gap-1 text-[14px]  leading-[24px] font-bold text-[#23A6F0] hover:text-blue-600">
               <SignedOut>
-              <SignInButton />
-            </SignedOut>
-            <SignedIn>
-              <UserButton showName/>
-            </SignedIn>
-              </div>
-            {/* <Login >
-            </Login> */}
-            {/* Desktop & Mobile Icons */}
+                <SignInButton />
+              </SignedOut>
+              <SignedIn>
+                <UserButton showName />
+              </SignedIn>
+            </div>
             <button className="p-2 text-[#23A6F0] hover:text-blue-500">
               <SearchComponent />
               <span className="sr-only">Search</span>
             </button>
             <button className="p-2 text-[#23A6F0] hover:text-blue-500">
               <Link href="/cart">
-              <ShoppingCart className="h-5 w-5" />
-                {/* <button onClick={notify}> </button> */}
-                {/* <ToastContainer
-                  position="top-center"
-                  autoClose={5000}
-                  hideProgressBar={false}
-                  newestOnTop={false}
-                  closeOnClick={false}
-                  rtl={false}
-                  pauseOnFocusLoss
-                  draggable
-                  pauseOnHover
-                  theme="light"
-                  transition={Bounce}
-                  /> */}
-
-                  </Link>
+                <ShoppingCart className="h-5 w-5" />
+                {totalCartItems > 0 && (
+                  <span className="absolute top-2 right-[93px] bg-blue-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+                    {totalCartItems}
+                  </span>
+                )}
+              </Link>
               <span className="sr-only">Cart</span>
             </button>
             <button className="hidden lg:block p-2 text-[#23A6F0] hover:text-blue-500">
               <div className="relative">
                 <Heart className="h-5 w-5" />
-                <span className="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-blue-500 text-[10px] text-white">
+                {/* <span className="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-blue-500 text-[10px] text-white">
                   1
-                </span>
+                </span> */}
               </div>
               <span className="sr-only">Wishlist</span>
             </button>

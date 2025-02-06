@@ -16,7 +16,6 @@ export default function Home() {
       <Head bgColor="bg-slate-900" />
       <Navbar />
       <HeroSection />
-    
       <ShopCards />
       <ProductCard hideText={false} products={products} />
       <ClassicProduct />

@@ -9,7 +9,6 @@ export default function CartPage() {
     <>
     <Navbar/>
     <div className="container mx-auto p-6">
-      <h1 className="text-2xl font-bold">Your Shopping Cart</h1>
       <Cart />
       <Footer/>
     </div>
