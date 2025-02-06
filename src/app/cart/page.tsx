@@ -1,21 +1,18 @@
-import React from 'react'
-import Navbar from '../Components/General-Navbar'
-import Footer from '../Components/Footer'
 
-function page() {
+
+import Cart from "@/app/Components/Cart";
+import Navbar from "../Components/General-Navbar";
+import Footer from "../Components/Footer";
+
+export default function CartPage() {
   return (
-    <div>
-      <Navbar/>
-
-      <div className='text-center font-semibold'>
-        <h1>No cart item Here </h1>
-       
-      </div>
+    <>
+    <Navbar/>
+    <div className="container mx-auto p-6">
+      <h1 className="text-2xl font-bold">Your Shopping Cart</h1>
+      <Cart />
       <Footer/>
     </div>
-  )
+    </>
+  );
 }
-
-export default page
-
-

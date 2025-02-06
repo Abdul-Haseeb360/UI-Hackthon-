@@ -5,6 +5,7 @@ import Footer from "@/app/Components/Footer"
 import Image from "next/image"
 import { Star, Heart, ShoppingCart, Eye, ChevronLeft, ChevronRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import AddToCartButton from "@/app/Components/CartButton"
 
 export default async function ProductPage({
   params,
@@ -120,9 +121,7 @@ export default async function ProductPage({
               <Button variant="outline" size="icon">
                 <Heart className="h-5 w-5" />
               </Button>
-              <Button variant="outline" size="icon">
-                <ShoppingCart className="h-5 w-5" />
-              </Button>
+                <AddToCartButton product={{ id: params.id, title: product.title, price: product.price, image: product.productImage, quantity: 1 }} />
               
             </div>
 

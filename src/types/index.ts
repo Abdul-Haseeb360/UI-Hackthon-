@@ -39,3 +39,11 @@ export interface Products {
   dicountPercentage?: number;
   isNew?: boolean;
 }
+
+export interface ProductCart {
+  id: string;
+  title: string;
+  price: number;
+  image: string;
+  quantity: number;
+}

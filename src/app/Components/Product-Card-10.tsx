@@ -72,15 +72,15 @@ const ProductCard: React.FC<ProductCardProps> = async ({ hideText = false }) => 
           {Products.map((product:any) => (
             <Link href={`/product-v2/${product._id}`} key={product._id}>
               <div className="bg-white border border-gray-300 rounded-lg shadow-lg p-4 transition-transform transform hover:scale-105">
-                {product.productImage && (
+                {/* {product.productImage && (
                   <Image
-                    src={urlFor(product.productImage).width(300).url() || "/placeholder.svg"}
+                    src={urlFor(product.productImage).url()}
                     width={300}
                     height={200}
                     alt={product.title}
                     className="w-full h-48 object-contain rounded-t-lg mb-4"
                   />
-                )}
+                )} */}
                 <h2 className="text-xl font-semibold text-gray-800 mb-2">{product.title}</h2>
                 <p className="text-gray-600 mb-2 line-clamp-2">{product.description}</p>
                 <p className="text-lg font-bold text-gray-900">Price: ${product.price}</p>
