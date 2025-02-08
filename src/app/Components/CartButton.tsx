@@ -11,7 +11,10 @@ export default function AddToCartButton({ product }: { product: ProductCart }) {
   const dispatch = useDispatch();
 
   const handleAddToCart = () => {
-    dispatch(addToCart({ ...product, quantity: 1 }));
+    dispatch(addToCart({
+      ...product, quantity: 1,
+      name: undefined
+    }));
     toast.success(`${product.title} added to cart!`);
   };
 

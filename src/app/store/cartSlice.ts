@@ -1,6 +1,8 @@
+import { urlFor } from "@/lib/sanityClient";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
 interface Product {
+  name: React.ReactNode | Iterable<React.ReactNode>;
   id: string;
   title: string;
   price: number;
@@ -27,7 +29,15 @@ const cartSlice = createSlice({
       if (existingItem) {
         existingItem.quantity += 1;
       } else {
-        state.items.push({ ...action.payload, quantity: 1 });
+        // state.items.push({ ...action.payload, quantity: 1 });
+        state.items.push({ 
+          id: action.payload.id,
+          name: action.payload.name, // Use correct property
+          title: action.payload.title, // Optional
+          price: action.payload.price,
+          image: urlFor(action.payload.image).toString(),// Ensure image is passed correctly
+          quantity: 1
+        });
       }
       state.totalQuantity += 1; // Update total quantity
     },
