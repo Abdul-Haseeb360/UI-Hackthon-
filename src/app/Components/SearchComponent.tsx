@@ -5,19 +5,12 @@ import { client } from '@/sanity/lib/client';
 import { urlFor } from '@/lib/sanityClient';
 import Image from 'next/image';
 import Link from 'next/link';
+import { SearchProduct } from '@/types';
 
-interface Product {
-  _id: string;
-  title: string;
-  productImage: any;
-  slug: {
-    current: string;
-  };
-}
 
 export default function SearchComponent() {
   const [searchTerm, setSearchTerm] = useState('');
-  const [searchResults, setSearchResults] = useState<Product[]>([]);
+  const [searchResults, setSearchResults] = useState<SearchProduct[]>([]);
 
   useEffect(() => {
     if (searchTerm.trim()) {

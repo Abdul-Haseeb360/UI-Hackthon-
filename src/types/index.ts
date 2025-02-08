@@ -13,6 +13,15 @@ export interface Company {
   url: string;
 }
 
+export interface SearchProduct {
+  _id: string;
+  title: string;
+  productImage: any;
+  slug: {
+    current: string;
+  };
+}
+
 export interface OurClientProps {
   showText?: boolean;
   title?: string;

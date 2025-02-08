@@ -51,7 +51,6 @@ export default function Navbar() {
             <div className="relative group">
               <button className="flex items-center gap-1 text-[14px] leading-[28px] font-bold text-[#737373] hover:text-blue-500">
                 <Link href="/shop-v2">Shop</Link>
-                <ChevronDown className="h-4 w-4" />
               </button>
               {/* Add dropdown menu here if needed */}
             </div>
@@ -61,12 +60,6 @@ export default function Navbar() {
             >
               About
             </Link>
-            {/* <Link
-              href="/product-v2"
-              className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500"
-            >
-              Products
-            </Link> */}
             <Link
               href="/contact-v2"
               className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500"
@@ -82,44 +75,48 @@ export default function Navbar() {
           </nav>
 
           <div className="flex items-center space-x-4 lg:space-x-6">
-            {/* <Link
-              href="/login"
-              className="hidden lg:flex items-center gap-1 text-[14px] leading-[24px] font-bold text-[#23A6F0] hover:text-blue-600"
-            >
-              </Link> */}
-            <div className="hidden lg:flex items-center gap-1 text-[14px]  leading-[24px] font-bold text-[#23A6F0] hover:text-blue-600">
-              <SignedOut>
-                <SignInButton />
-              </SignedOut>
-              <SignedIn>
-                <UserButton showName />
-              </SignedIn>
-            </div>
             <button className="p-2 text-[#23A6F0] hover:text-blue-500">
               <SearchComponent />
               <span className="sr-only">Search</span>
             </button>
             <button className="p-2 text-[#23A6F0] hover:text-blue-500">
               <Link href="/cart">
-                <ShoppingCart className="h-5 w-5" />
-                {totalCartItems > 0 && (
-                  <span className="absolute top-2 right-[93px] bg-blue-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
-                    {totalCartItems}
-                  </span>
-                )}
+                <div className="relative">
+                  <ShoppingCart className="h-5 w-5" />
+                  {totalCartItems > 0 && (
+                    <span className="absolute -top-2 -right-2 bg-blue-500 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
+                      {totalCartItems}
+                    </span>
+                  )}
+                </div>
               </Link>
               <span className="sr-only">Cart</span>
             </button>
             <button className="hidden lg:block p-2 text-[#23A6F0] hover:text-blue-500">
               <div className="relative">
                 <Heart className="h-5 w-5" />
-                {/* <span className="absolute -top-1 -right-1 flex h-4 w-4 items-center justify-center rounded-full bg-blue-500 text-[10px] text-white">
-                  1
-                </span> */}
               </div>
               <span className="sr-only">Wishlist</span>
             </button>
-
+            <div className="flex items-center justify-end gap-1 text-sm sm:text-[14px] leading-[24px] font-bold text-[#23A6F0] hover:text-blue-600">
+              <SignedOut>
+                <SignInButton>
+                  <button className="px-2 py-1 rounded-md border border-[#23A6F0] hover:bg-[#23A6F0] hover:text-white transition-colors duration-200">
+                    Sign In
+                  </button>
+                </SignInButton>
+              </SignedOut>
+              <SignedIn>
+                <UserButton
+                  appearance={{
+                    elements: {
+                      userButtonAvatarBox: "w-8 h-8 sm:w-10 sm:h-10",
+                      userButtonTrigger: "focus:shadow-none",
+                    },
+                  }}
+                />
+              </SignedIn>
+            </div>
             {/* Mobile Menu */}
             <Sheet>
               <SheetTrigger asChild>
