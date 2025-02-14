@@ -2,6 +2,7 @@
 import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { Suspense } from "react";
+import { Button } from "@/components/ui/button";
 
 const PaymentSuccessContent = () => {
   const searchParams = useSearchParams();
@@ -13,8 +14,8 @@ const PaymentSuccessContent = () => {
       <p className="text-lg mt-2">
         You have paid <strong>${amount.toFixed(2)}</strong>
       </p>
-      <Link href="/" className="text-blue-500 underline mt-4 block">
-        Go Back Home
+      <Link href="/">
+        <Button className="text-center">Go Back Home</Button>
       </Link>
     </div>
   );
