@@ -42,7 +42,7 @@ const CheckoutPage = ({ amount }: { amount: number }) => {
       elements,
       clientSecret,
       confirmParams: {
-        return_url: `http://localhost:3000/Payment-Success?amount=${amount}`,
+        return_url: `${process.env.NEXT_PUBLIC_BASE_URL}/Payment-Success?amount=${amount}`,
       },
     });
 
