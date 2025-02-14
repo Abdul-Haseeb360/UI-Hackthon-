@@ -10,9 +10,10 @@ function HeroSection() {
         <Image
           src={heroSetion}
           alt="Hero Section Image"
+          className="object-cover text-center "
           fill
-          className="object-cover "
-          priority
+          loading="eager"
+          
         />
         {/* Overlay Text */}
         
