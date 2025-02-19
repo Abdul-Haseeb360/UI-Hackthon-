@@ -3,29 +3,18 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { Suspense } from "react";
 import { Button } from "@/components/ui/button";
-import { hatch } from "ldrs";
+// import { hatch } from "ldrs";
 import Navbar from "../Components/General-Navbar";
 import Footer from "../Components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import Loader from "../Components/Loader";
 
 const PaymentSuccessContent = () => {
   const searchParams = useSearchParams();
   const amount = Number(searchParams.get("amount")) || 0;
 
   return (
-    // <>
-    //   <div className="text-center w-full p-6">
-    //     <h1 className="text-3xl font-bold">Thank you for your purchase! 🎉</h1>
-    //     <p className="text-lg mt-2">
-    //       You have paid <strong>${amount.toFixed(2)}</strong>
-    //     </p>
-    //     <Link href="/shop-v2">
-    //       <Button className="text-center">Continue Shopping</Button>
-    //     </Link>
-    //   </div>
-    //   <Footer/>
-    // </>
     <>
       <Navbar />
 
@@ -60,13 +49,13 @@ const PaymentSuccessContent = () => {
   );
 };
 
-hatch.register();
+// hatch.register();
 
 // Default values shown
 
 const PaymentSuccess = () => {
   return (
-    <Suspense fallback={<p>Loding....</p>}>
+    <Suspense fallback={<Loader />}>
       <PaymentSuccessContent />
     </Suspense>
   );
