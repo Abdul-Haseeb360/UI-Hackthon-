@@ -36,7 +36,7 @@ const Cart = () => {
       {cartItems.length === 0 ? (
         <div className="mx-auto text-center ">
           <p className="text-center text-gray-500 pb-4">
-            Your cart is empty. Start shopping now and find something you'll
+            Your cart is empty. Start shopping now and find something you
             love!😊
           </p>
           <Link href="/shop-v2">
