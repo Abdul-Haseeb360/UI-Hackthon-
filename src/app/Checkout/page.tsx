@@ -4,6 +4,7 @@ import StripePayment from "@/app/Components/Strip-payment";
 import Navbar from "../Components/General-Navbar";
 import Footer from "../Components/Footer";
 import { Suspense } from "react";
+import Loader from "../Components/Loader";
 
 const CheckoutContent = () => {
   const searchParams = useSearchParams();
@@ -26,7 +27,7 @@ const CheckoutPage = () => {
   return (
     <>
       <Navbar />
-      <Suspense fallback={<p className="text-center">Loading...</p>}>
+      <Suspense fallback={<Loader/>}>
         <CheckoutContent />
       </Suspense>
       <Footer />

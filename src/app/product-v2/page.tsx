@@ -14,7 +14,7 @@ export default async function ProductsPage() {
       <div className="container mx-auto px-4 mt-20">
         <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">Products</h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {products.map((product:any) => (
+          {products.products.map((product:any) => (
             <Link href={`/product-v2/${product._id}`} key={product._id}>
               <div className="bg-white border border-gray-300 rounded-lg shadow-lg p-4 transition-transform transform hover:scale-105">
                 {product.productImage && (

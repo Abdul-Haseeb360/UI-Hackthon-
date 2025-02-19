@@ -29,7 +29,7 @@ export interface OurClientProps {
   companies?: Company[];
 }
 export interface ProductCardProps {
-  products: Product[]; 
+  products: Product[];
   hideText?: boolean;
 }
 
@@ -55,4 +55,15 @@ export interface ProductCart {
   price: number;
   image: string;
   quantity: number;
+}
+
+export interface FAQItem {
+  id: number;
+  question: string;
+  answer: string;
+}
+export interface PaginationProps {
+  page: number;
+  totalPages: number;
+  onPageChange: (page: number) => void;
 }
