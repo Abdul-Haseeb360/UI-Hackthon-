@@ -67,10 +67,10 @@ export default function Navbar() {
               Contact
             </Link>
             <Link
-              href="/pages"
+              href="/pricing-v2"
               className="text-[14px] leading-[24px] font-bold text-[#737373] hover:text-blue-500"
             >
-              Pages
+              Pricing
             </Link>
           </nav>
 
