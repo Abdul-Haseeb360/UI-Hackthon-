@@ -3,7 +3,7 @@ import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import { Suspense } from "react";
 import { Button } from "@/components/ui/button";
-// import { hatch } from "ldrs";
+import { hatch } from "ldrs";
 import Navbar from "../Components/General-Navbar";
 import Footer from "../Components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
@@ -49,7 +49,7 @@ const PaymentSuccessContent = () => {
   );
 };
 
-// hatch.register();
+hatch.register();
 
 // Default values shown
 
